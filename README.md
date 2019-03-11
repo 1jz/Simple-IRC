@@ -4,9 +4,9 @@ This is a simple IRC nodejs module that does not rely on any dependencies primar
 ## Getting Started
 The snippet of code is the client which will hold all your configurations.
 ```javascript
-var  irc  =  require('./irc.js');
+var irc = require('./irc.js');
 
-var  options  = {
+var options = {
 	host: "irc.chat.twitch.tv", //add host address
 	port: 6667, //add port value
 	user: "", //add your nick
@@ -16,7 +16,7 @@ var  options  = {
 	debug: false //will log all data received
 }
 
-const  bot  =  new  irc(options);
+const bot = new irc(options);
 bot.connect();
 
 bot.on('connect', () => {
