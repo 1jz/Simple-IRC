@@ -20,19 +20,19 @@ const  bot  =  new  irc(options);
 bot.connect();
 
 bot.on('connect', () => {
-console.log(`Connected successfully`);
+	console.log(`Connected successfully`);
 });
 
 bot.on('chat', (user, channel, txt) => {
-console.log(`${user}@#${channel} -> ${txt}`);
+	console.log(`${user}@#${channel} -> ${txt}`);
 });
 
 bot.on('join', (channel) => {
-console.log(`Joined #${channel}`);
+	console.log(`Joined #${channel}`);
 });
 
 bot.on('part', (channel) => {
-console.log(`Parting #${channel}`);
+	console.log(`Parting #${channel}`);
 });
 ```
 
