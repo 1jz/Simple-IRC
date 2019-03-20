@@ -40,3 +40,17 @@ bot.on('part', (channel) => {
 - Automatically sorted join function (Binary Search)
 - Event emits
 - Custom interval channel joining
+
+## Events
+- connect - Connected to server.
+- chat - Chat message received.
+- join - Successfully joined channel.
+- part - Successfully parted channel.
+
+## Functions
+- say(Message, Channel) - (String, String) Sends message to channel.
+- join(Channel) - (String) Joins channel.
+- part(Channel) - (String) Leaves channel.
+    - Do not enter '#' symbols as they are automatically accounted for.
+- write(String) - Writes message directly to server does __not__ automatically add ```\r\n```
+- ping() - pings server to check if connection is alive.
